@@ -13,19 +13,25 @@
 
 	let number = 5;
 	check_even_odd(num){
-		if (num % 2 == 0) {
-			console.log('Number is even');
-		}else if (num % 2 != 0) {
-			console.log('Number is  odd');
+		if (num % 2 === 0) {
+			return true;
+		}else{
+			return false;
 		}
+		
+		\\ or 
+		return num % 2 === 0 ? true : false
 	}
 
 3. Explain the difference between == and === in JavaScript.
-	The "===" operator compares both content and type meanwhile the "==" compares only content.
+	The "===" operator compares both content and type meanwhile the "==" compares only content. Additionally,
+	it is recommended to always use "===" to avoid errors and bogs in the program👀.
+		ex: 
+		18 === 18 \\true		'18' === 18 \\ false  	but 18 == '18' \\ true
 
 4. Write a program that takes user input and prints whether it is a positive, negative, or zero.
 
-	let number = prompt('Enter a number');
+	let number = Number(prompt('Enter a number'));
 	if (number > 0 ){
 		console.log('Positive');
 	}else if (number < 0){
@@ -45,7 +51,7 @@
 		}
 	}
 
-	**Note**: We can also solve this using an iterator instead of recursion because, if possible, it is better to use an iterator since recursion requires more time and memory to process.
+	**Note**:✍ We can also solve this using an iterator instead of recursion because, if possible, it is better to use an iterator since recursion requires more time and memory to process.
 
 	function factorial2(num){
 		let fac = 1;

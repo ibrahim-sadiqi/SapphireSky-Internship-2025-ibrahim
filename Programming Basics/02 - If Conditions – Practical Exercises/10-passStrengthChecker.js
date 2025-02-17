@@ -1,4 +1,4 @@
-let pass = 'AAAsAAA232'
+let pass = '1111111a1AAA'
 let strong = false;
 if (pass.length >= 8) {
     let isUpper = false;

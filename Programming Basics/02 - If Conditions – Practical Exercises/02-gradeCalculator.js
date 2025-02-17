@@ -1,17 +1,19 @@
 let score = 50;
 
-if (score <= 100 && score >= 0) {
-    if (score >= 90) {
-        console.log('A');
-    } else if (score >= 80) {
-        console.log('B');
-    } else if (score >= 70) {
-        console.log('C');
-    } else if (score >= 60) {
-        console.log('D')
-    } else {
-        console.log('F')
+function gradeCalculator(score) {
+    if (score > 100 || score < 0) {
+        return 'Invalid score number!';
     }
-} else {
-    console.log(`${score} is not a valid score`)
+    if (score >= 90) {
+        return 'A';
+    } else if (score >= 80) {
+        return 'B';
+    } else if (score >= 70) {
+        return 'C';
+    } else if (score >= 60) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+
 }

@@ -40,6 +40,18 @@
 		console.log('Zero');
 	}
 
+5. What are JavaScript closures? Provide an example.
+	A closure in JavaScript is a function that remembers variables from its outer scope even after the outer 
+	function has finished executing. This allows functions to "remember" and access variables even when they are 
+	called outside of their original scope.
+		ex:
+		function counter() {
+    		let count = 0;
+
+			return function() {
+				count++;
+				console.log('Current count:',count)
+
 6. Write a function that calculates the factorial of a given number.
 	
 	function factorial(num){

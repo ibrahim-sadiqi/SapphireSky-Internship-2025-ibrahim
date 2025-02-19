@@ -13,8 +13,8 @@ function isArmstrong(number) {
     const firstNumber = number;
     // change to string and get the length.
     const digitCount = String(firstNumber).length;
-    // Or we can write our own function without change to  
-    // string get the number of digits.
+    // Or, we can write our own function without converting to  
+    // a string to get the number of digits.
     //const digitCount = getDigitsCount(firstNumber);
     let sum = 0;
     while (number > 0) {

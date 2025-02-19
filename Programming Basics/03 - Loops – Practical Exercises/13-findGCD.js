@@ -1,5 +1,5 @@
 
-function GCD(a, b) {
+function gcd(a, b) {
     let gcd = 0;
     let smaller = 0;
     let larger = 0;
@@ -20,4 +20,4 @@ function GCD(a, b) {
     return gcd;
 }
 
-console.log(GCD(16000, 1880))
+console.log(gcd(16000, 1880))

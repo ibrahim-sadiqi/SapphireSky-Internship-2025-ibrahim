@@ -1,6 +1,6 @@
 let guess = Number(prompt('Enter a number:'));
 
-let n = Math.floor(Math.random() * 100) + 1;
+let n = Math.trunc(Math.random() * 100) + 1;
 
 while (guess !== n) {
     if (guess > n) {

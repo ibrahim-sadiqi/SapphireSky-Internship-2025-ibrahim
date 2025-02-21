@@ -1,11 +1,14 @@
-const fibo = 150;
+const n = 10;
 
 let first = 0;
 let second = 1;
-
-while (second < fibo) {
-    console.log(second)
-    third = first + second;
+let third = second;
+let counter = 1;
+console.log(third)
+while (counter < n) {
+    console.log(third)
+    counter++;
     first = second;
     second = third;
+    third = first + second;
 }

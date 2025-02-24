@@ -5,5 +5,4 @@ function reverseString(str) {
   }
   return revers;
 }
-
 console.log(reverseString("abcd"));

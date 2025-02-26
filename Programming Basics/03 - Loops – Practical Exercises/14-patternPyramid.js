@@ -1,3 +1,11 @@
+// Pattern Printing - Pyramid
+// Write a program that prints this pattern for N = 5:
+//
+//    *
+//   ***
+//  *****
+// *******
+
 const n = 5;
 
 for (let i = 1; i < n; i++) {

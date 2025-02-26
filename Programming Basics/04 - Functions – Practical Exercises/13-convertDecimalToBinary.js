@@ -1,3 +1,6 @@
+// Convert Decimal to Binary
+// Implement decimalToBinary(n), which converts a decimal number to its binary equivalent.
+
 const decimalToBinary = function (n) {
   let binanry = "";
   while (n >= 1) {

@@ -1,3 +1,7 @@
+// Binary Search Algorithm
+// Write a function binarySearch(arr, target) that performs a
+// binary search on a sorted array.
+
 function binarySearch(arr, target) {
   let low = 0;
   let high = arr.length - 1;

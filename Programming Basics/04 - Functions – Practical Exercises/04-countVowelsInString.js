@@ -1,3 +1,6 @@
+// Count Vowels in a String
+// Write a function countVowels(str) that takes a string and returns the number of vowels in it
+
 function countVowels(str) {
   let count = 0;
   const isVoweles = function (chr) {

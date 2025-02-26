@@ -1,3 +1,6 @@
+// Calculate Factorial Using Recursion
+// Implement factorial(n), which calculates the factorial of n using recursion
+
 function factorial(n) {
   if (n <= 2) {
     return n;

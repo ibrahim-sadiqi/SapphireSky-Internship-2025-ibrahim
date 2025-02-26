@@ -1,3 +1,6 @@
+// Find the GCD of Two Numbers
+// Write a function gcd(a, b) that finds the Greatest Common Divisor (GCD) using the Euclidean algorithm.
+
 const gcd = function (a, b) {
   if (a === 0) {
     return b;

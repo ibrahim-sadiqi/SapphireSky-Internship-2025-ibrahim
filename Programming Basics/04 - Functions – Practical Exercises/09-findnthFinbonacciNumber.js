@@ -1,3 +1,6 @@
+// Find the nth Fibonacci Number
+// Implement fibonacci(n), which returns the nth Fibonacci number.
+
 function finbonacci(n) {
   if (n <= 1) {
     return n;

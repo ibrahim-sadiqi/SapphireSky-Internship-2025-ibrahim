@@ -1,12 +1,12 @@
 const number = 11;
 
 function isPrime(number) {
-    for (let i = 2; i < number; i++) {
-        if (number % i === 0) {
-            return false
-        }
+  for (let i = 2; i < Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
     }
-    return true
+  }
+  return true;
 }
 
-console.log(isPrime(number))
+console.log(isPrime(number));

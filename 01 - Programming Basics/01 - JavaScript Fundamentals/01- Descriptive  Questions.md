@@ -11,22 +11,18 @@
 
 2.  Write a function to check if a number is even or odd
 
-    let number = 5;
     isEven(num){
-
-        return num % 2 === 0;
-
+    return num % 2 === 0
     }
 
+    console.log(isEven(5))
+
 3.  Explain the difference between == and === in JavaScript.
-    The "===" operator compares both content and type meanwhile the "==" compares only content. Additionally,
-    it is recommended to always use "===" to avoid errors and bogs in the program👀.
-    ex:
-    18 === 18 \\true '18' === 18 \\ false but 18 == '18' \\ true
+    The "===" operator compares both content and type meanwhile the "==" compares only content.
 
 4.  Write a program that takes user input and prints whether it is a positive, negative, or zero.
 
-    let number = Number(prompt('Enter a number'));
+    let number = prompt('Enter a number');
     if (number > 0 ){
     console.log('Positive');
     }else if (number < 0){
@@ -35,19 +31,7 @@
     console.log('Zero');
     }
 
-5.  What are JavaScript closures? Provide an example.
-    A closure in JavaScript is a function that remembers variables from its outer scope even after the outer
-    function has finished executing. This allows functions to "remember" and access variables even when they are
-    called outside of their original scope.
-    ex:
-    function counter() {
-    let count = 0;
-
-        	return function() {
-        		count++;
-        		console.log('Current count:',count)
-
-6.  Write a function that calculates the factorial of a given number.
+5.  Write a function that calculates the factorial of a given number.
 
     function factorial(num){
     if (num <= 2){
@@ -57,7 +41,7 @@
     }
     }
 
-    **Note**:✍ We can also solve this using an iterator instead of recursion because, if possible, it is better to use an iterator since recursion requires more time and memory to process.
+    **Note**: We can also solve this using an iterator instead of recursion because, if possible, it is better to use an iterator since recursion requires more time and memory to process.
 
     function factorial2(num){
     let fac = 1;
@@ -68,7 +52,7 @@
     return fac;
     }
 
-7.  How does this keyword work in JavaScript? Provide an example.
+6.  How does this keyword work in JavaScript? Provide an example.
 
     1. Global context
        In the global scope refers to global window object in browser.
@@ -110,7 +94,7 @@
        console.log(this)
        })
 
-8.  Explain the concept of hoisting in JavaScript
+7.  Explain the concept of hoisting in JavaScript
     In JavaScript, hoisting is a behavior where variable and function declarations are moved to the top of their scope before the code is executed. When the code runs, the interpreter assigns undefined to variables declared with var until they are initialized, while function declarations are fully hoisted and can be used before their definition. Understanding hoisting helps in writing better and more predictable code.
 
     1. Variable hoisting
@@ -126,7 +110,7 @@
        console.log("Hello, world!");
        }
 
-9.  Write a function to find the sum of all numbers in an array.
+8.  Write a function to find the sum of all numbers in an array.
 
     function sumArrayElements(args){
     let sum = 0
@@ -138,7 +122,7 @@
     var arr = [5, 4, 2, 6, 7, 8]
     console.log(sumArrayElements(arr))
 
-10. What are arrow functions in JavaScript, and how are they different from regular functions?
+9.  What are arrow functions in JavaScript, and how are they different from regular functions?
     Arrow functions in JavaScript are a shorthand way of writing functions using the => (arrow) syntax.
     They were introduced in ES6 and provide a cleaner and more readable alternative to regular function expressions.
     Ex:

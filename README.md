@@ -1,1 +1,1 @@
-# Sapphire Sky internship program 
+# SapphireSky Internship Program 

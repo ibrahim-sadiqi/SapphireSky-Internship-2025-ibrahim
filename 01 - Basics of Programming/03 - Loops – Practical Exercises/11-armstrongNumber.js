@@ -9,7 +9,7 @@ const getDigitsCount = function (number) {
   let counter = 0;
   while (number > 0) {
     counter++;
-    number = Math.floor(number / 10);
+    number = Math.trunc(number / 10);
   }
   return counter;
 };
@@ -24,7 +24,7 @@ function isArmstrong(number) {
   let sum = 0;
   while (number > 0) {
     sum += (number % 10) ** digitCount;
-    number = Math.floor(number / 10);
+    number = Math.trunc(number / 10);
   }
   return firstNumber === sum;
 }

@@ -2,12 +2,14 @@
 // Write a function isPalindrome(str) that returns true if the given string is a palindrome.
 // Example: "racecar" → true, "hello" → false
 
-function isPalindrome(str) {
-  let revers = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    revers += str[i];
+function isPalindrome2(str) {
+  const strL = str.toLowerCase().replaceAll(" ", "");
+  let start = 0;
+  let end = strL.length - 1;
+  while (start < end) {
+    if (strL[start++] !== strL[end--]) return false;
   }
-  return revers === str;
+  return true;
 }
-
-console.log(isPalindrome("racecar"));
+console.log(isPalindrome("Was it a car or a cat I saw"));
+console.log(isPalindrome2("Was it a car or a cat I saw"));

@@ -3,10 +3,15 @@
 // Example: "hello" → "olleh"
 
 function reverseString(str) {
-  let revers = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    revers += str[i];
+  const arr = [...str];
+  let start = 0;
+  let end = arr.length - 1;
+  while (start < end) {
+    [arr[start], arr[end]] = [arr[end], arr[start]];
+    start++;
+    end--;
   }
-  return revers;
+  return arr.join("");
 }
-console.log(reverseString("abcd"));
+
+console.log(reverseString("hello"));

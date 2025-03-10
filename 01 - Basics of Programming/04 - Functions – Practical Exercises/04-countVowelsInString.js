@@ -2,17 +2,16 @@
 // Write a function countVowels(str) that takes a string and returns the number of vowels in it
 
 function countVowels(str) {
+  const newStr = str.toLowerCase();
   let count = 0;
-  const isVoweles = function (chr) {
-    const vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
-    for (let i = 0; i < vowels.length; i++) {
-      if (chr === vowels[i]) {
-        return true;
-      }
-    }
-  };
   for (let i = 0; i < str.length; i++) {
-    if (isVoweles(str[i])) {
+    if (
+      str[i] === "a" ||
+      str[i] === "e" ||
+      str[i] === "i" ||
+      str[i] === "o" ||
+      str[i] === "u"
+    ) {
       count++;
     }
   }

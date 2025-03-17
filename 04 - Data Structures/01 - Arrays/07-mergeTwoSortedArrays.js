@@ -10,20 +10,18 @@ function mergeTwoSortedArray(firstArray, secondArray) {
     return [...firstArray, ...secondArray];
   }
   const sortedArray = [];
-  let j = 0;
-  for (let i = 0; i < sizeFirst; i++) {
-    while (secondArray[j] < firstArray[i]) {
-      sortedArray.push(secondArray[j++]);
-    }
-    sortedArray.push(firstArray[i]);
+  let j = (i = 0);
+  while (i < firstArray.length && j < secondArray.length) {
+    if (secondArray[j] <= firstArray[i]) sortedArray.push(secondArray[j++]);
+    else sortedArray.push(firstArray[i++]);
   }
-  while (j < sizeSecond) {
-    sortedArray.push(secondArray[j++]);
-  }
+
+  if (i < firstArray.length) sortedArray.push(firstArray[i]);
+  if (j < secondArray.length) sortedArray.push(secondArray[j]);
   return sortedArray;
 }
 
 const arr1 = [-1, 10, 15, 20];
-const arr2 = [-1, 0, 5, 16];
+const arr2 = [-1, 0, 5, 16, 30];
 
 console.log(mergeTwoSortedArray(arr1, arr2));

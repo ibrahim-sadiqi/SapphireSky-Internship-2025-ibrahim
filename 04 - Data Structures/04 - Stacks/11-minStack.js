@@ -1,24 +1,26 @@
 // 11. How do you design a stack that supports push(), pop(), and getMin() in constant time?
 
-class Stack {
+class MinStack {
   constructor() {
     this.stackArray = [];
-    this.min;
+    this.min = [];
   }
 
   getMin() {
-    return this.min;
+    if (this.stackArray.length === 0) return "Stack is Empty";
+    return this.min[this.min.length - 1];
   }
 
   push(value) {
-    if (this.isEmpty()) this.min = value;
-    if (this.min > value) this.min = value;
     this.stackArray.push(value);
+    if (this.min.length === 0 || value <= this.getMin()) this.min.push(value);
   }
 
   pop() {
     if (this.isEmpty()) return "Stack is empty";
-    return this.stackArray.pop();
+    let rmValue = this.stackArray.pop();
+    if (rmValue === this.getMin()) this.min.pop();
+    return rmValue;
   }
 
   size() {
@@ -39,13 +41,12 @@ class Stack {
   }
 }
 
-const s = new Stack();
+const s = new MinStack();
 s.push(10);
+s.push(10);
+s.push(69);
 s.push(5);
 s.push(3);
-s.push(-1);
 s.push(1);
 s.push(11);
 s.push(6);
-s.print();
-console.log(s.getMin());

@@ -1,5 +1,5 @@
 import LinkedList from "./linkedList.js";
-
+import Node from "./node.js";
 // .2 Implement a function to insert a node at the beginning of a linked list.
 LinkedList.prototype.insertFirst = function (data) {
   let newNode = new Node(data);
@@ -14,3 +14,7 @@ LinkedList.prototype.insertFirst = function (data) {
   }
   this._counter++;
 };
+
+const l = new LinkedList();
+l.insertFirst(1);
+l.insertFirst(2);

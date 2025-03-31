@@ -1,4 +1,5 @@
 import LinkedList from "./linkedList.js";
+import Node from "./node.js";
 
 // 9. Write a function to merge two sorted linked lists.
 LinkedList.prototype.mergeTwoSorted = function (link2) {

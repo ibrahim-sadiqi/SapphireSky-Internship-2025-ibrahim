@@ -1,0 +1,3 @@
+1. What is a queue, and how does it follow the FIFO principle?
+   A Queue is a type of data structure used to store and manage data in a specific order, similar to a stack. However, unlike a stack, which follows the LIFO (Last In, First Out) principle, a queue operates on the FIFO (First In, First Out) principle. This means that the first element added to the queue is the first one to be removed, similar to a line of people where the person who arrives first gets served first.
+   In computing, queues are widely used for task scheduling, instruction processing, and managing resources in operating systems and networks.

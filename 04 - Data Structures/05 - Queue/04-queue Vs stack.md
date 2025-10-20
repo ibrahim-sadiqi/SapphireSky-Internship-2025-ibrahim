@@ -1,0 +1,2 @@
+4. What is the difference between a queue and a stack?
+   Stacks and queues are fundamental data structures that used with defferent purpose and operations. Stacks follow the LIFO (Last In First Out) priciple and used for backtracking, function call managemnet, and expression evaluation. Queues follow the FIFO (First In First Out) principle and are used for task scheduling, resource management, and BFS search algorithms.

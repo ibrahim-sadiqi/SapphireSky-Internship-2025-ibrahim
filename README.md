@@ -1,1 +1,1 @@
-# SapphireSky Internship Program 
+# SkyTeams Internship Program 

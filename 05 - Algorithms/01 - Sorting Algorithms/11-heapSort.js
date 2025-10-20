@@ -23,7 +23,7 @@ const heapify = function (arr, n, i) {
   if (largest !== i) {
     [arr[i], arr[largest]] = [arr[largest], arr[i]];
     heapify(arr, n, largest);
-  }
+  } 
 };
 
 const heapSort = function (arr) {

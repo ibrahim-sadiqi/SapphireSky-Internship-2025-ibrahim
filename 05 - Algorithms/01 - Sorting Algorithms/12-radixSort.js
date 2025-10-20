@@ -31,7 +31,6 @@ const countingSort = function (arr, exp) {
 
 const redixSort = function (arr) {
   const max = getMax(arr);
-  console.log(max);
   let sorted = [...arr];
   for (let exp = 1; Math.floor(max / exp) > 0; exp *= 10) {
     const sortedIte = countingSort(sorted, exp);
